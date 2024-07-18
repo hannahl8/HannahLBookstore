@@ -1,0 +1,58 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/HannahLBookstoreOrder/api/categories
+Accept: application/json
+
+###
+POST http://localhost:8080/HannahLBookstoreOrder/api/orders
+Content-Type: application/json
+Accept: application/json, text/plain, */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Cookie: JSESSIONID=CC32DC437AF05DECA0E59FE8AC8FAF29; Pycharm-d75ee5fe=ae500a5c-97c8-4b76-ae81-2ae22e7b7a3f; ajs_anonymous_id=006e644e-ba31-432d-9440-bcf2ffaf30e8; csrftoken=QQTs8VwhczAcDxa1NgsjqOxewRLLYtQ4; Idea-6de48fa4=238095ab-9a83-416f-b14d-db28e85418ba
+Origin: http://localhost:5173
+Referer: http://localhost:5173/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36 Edg/126.0.0.0
+sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"
+sec-ch-ua-mobile: ?1
+sec-ch-ua-platform: "Android"
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+          "bookId": 1001,
+          "title": "A Game of Thrones",
+          "author": "George R. R. Martin",
+          "description": "Everything's better with some wine in the belly.",
+          "price": 1999,
+          "rating": 0,
+          "isPublic": true,
+          "isFeatured": true,
+          "categoryId": 1001
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "Hannah Lyons",
+    "address": "12979 Hampton Forest Ct Fairfax, VA 22030",
+    "phone": "571-332-2465",
+    "email": "hannahl8@vt.edu",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 7,
+    "ccExpiryYear": 2024
+  }
+}
+
